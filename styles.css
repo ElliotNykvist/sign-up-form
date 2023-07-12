@@ -1,4 +1,132 @@
-.red {
-  color: red;
+@font-face {
+  font-family:"norse-bold";
+  src: url(fonts/Norse-Bold.otf);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+
+
+
+.header {
+  font-weight: 550;
+  font-size: 1.4em;
+  font-family:Arial, Helvetica, sans-serif;
+  max-width: 105vh;
+  margin-top: 20vh;
+  margin-left: 4vh;
   
+}
+
+.footer {
+  font-weight: 540;
+  font-size: 1em;
+  font-family:Arial, Helvetica, sans-serif;
+  max-width: 45%;
+  min-width: 45%;
+  margin-top: 8vh;
+  margin-left: 4vh;
+}
+
+button {
+  width: 220px;
+  height: 50px;
+  color: white;
+  background-color: #596D48;
+  font-weight: 550;
+  font-size: 1em;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 3vh;
+  margin-left: 4vh;
+}
+
+#login-link {
+  text-decoration: none;
+  color: #596D48;
+  font-weight: 600;
+}
+
+.background-image {
+  width: 75vh;
+  height: 150vh;
+  margin: 0;
+
+}
+.container {
+  display: flex;
+  position: relative;
+  
+}
+
+.picture {
+  flex: 1;
+  position: relative;
+  min-height: 100vh;
+ 
+}
+
+.background-image {
+  width: 75vh;
+  height: 150vh;
+  margin: 0;
+}
+
+.logo {
+  position: absolute;
+  color: white;
+  font-size: 100px;
+  margin-top: 10vh;
+  top: 22vh;
+  background-color: RGBA(0,0,0, 0.4);
+  font-family: "norse-bold";
+  height: 25vh;
+  width: 75vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  
+  
+  
+}
+
+.logo-footer {
+  position: absolute;
+  bottom: 0;
+  left: 20vh;
+  right: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  color: white;
+  
+}
+
+.picture-text {
+  margin-bottom: 0;
+}
+
+#logo {
+  height: 130px;
+  margin-right: 20px;
+  
+}
+
+.title {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: white;
+
 }
