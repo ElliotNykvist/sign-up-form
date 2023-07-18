@@ -208,10 +208,6 @@ label {
 }
 
 
-.content {
-  
-
-}
 
 input:focus {
   border: none;
@@ -225,5 +221,9 @@ input:invalid:focus {
 
 input:focus:valid {
   border: rgb(0, 183, 255) 2px solid;
+}
+
+.check {
+  color: red;
 }
 

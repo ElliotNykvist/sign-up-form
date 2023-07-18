@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Sign In Form</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -31,31 +31,33 @@
 
      <div class="input-section">
       <p class="lets">Let's do this!</p>
-      <form action="" method="">
+      <form action="#" method="">
     <container class="align">
       <div class="child">
         <label for="first">FIRST NAME
-          <input type="text" id="first">
+          <input type="text" id="first" placeholder="First Name" required>
         </label>
         <label for="last">LAST NAME
-          <input type="text" id="last">
+          <input type="text" id="last" placeholder="Last Name" required>
         </label>
      </div>
 
      <div class="child">
       <label for="mail">EMAIL
-        <input type="email" id="mail">
+        <input type="email" id="mail" placeholder="Example@email.com" required>
       </label>
         <label for="phone">PHONE NUMBER
-          <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+          <input type="tel" id="phone" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
       </label>
      </div>
      <div class="child">
         <label for="pass">PASSWORD
-          <input type="password" id="pass"  minlength="8" required>
+          <input type="password" id="pass" placeholder="Password" minlength="8" maxlength="15" required>
+          <p class="check"></p>
         </label>
-        <label for="confirmpass">CONFIRM PASSWORD
-          <input type="password" id="confirmpass"  minlength="8" required>
+        <label for="confirmPass">CONFIRM PASSWORD
+          <input type="password" id="confirmPass" placeholder="Confirm Password" minlength="8" maxlength="15" required>
+          <p class="check"></p>
         </label>
       </container>
     </div>
@@ -67,13 +69,14 @@
 
 
     <section class="footer">
-      <button type="submit">Create Account</button>
+      <button type="submit" onclick="matchPassword()">Create Account</button>
       <p class="account">Already have an account? <a id="login-link" href="">Log in</a></p>
     </section>
 
   </div>
-</div
+</div>
 
- <script src="script.js">
+<script src="script.js"></script>
+
 </body>
 </html>
