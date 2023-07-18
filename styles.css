@@ -1,7 +1,10 @@
+
+
 @font-face {
   font-family:"norse-bold";
   src: url(fonts/Norse-Bold.otf);
 }
+
 
 html,
 body {
@@ -21,8 +24,11 @@ body {
   font-size: 1.4em;
   font-family:Arial, Helvetica, sans-serif;
   max-width: 105vh;
+  min-width: 105vh;
   margin-right: 14vh;
   margin-top: 20vh;
+  padding: 30px;
+  
 
   
 }
@@ -34,7 +40,8 @@ body {
   max-width: 45%;
   min-width: 45%;
   margin-right: 14vh;
-  margin-top: 8vh;
+  
+  padding: 30px;
 }
 
 button {
@@ -75,7 +82,7 @@ button {
 .background-image {
   width: 75vh;
   height: 150vh;
-  margin: 0;
+  margin-right: 0px;
 }
 
 .logo {
@@ -119,7 +126,6 @@ button {
 }
 
 .title {
-  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,3 +135,95 @@ a {
   color: white;
 
 }
+
+.lets {
+  font-weight: 550;
+  font-size: 1.3em;
+  font-family:Arial, Helvetica, sans-serif;
+  max-width: 105vh;
+
+
+}
+
+
+
+button:hover{
+  background-color: rgb(0, 32, 0);
+  color: rgb(255, 254, 254);
+  
+}
+
+form {
+  display: flex;
+  width: 60vw;
+  flex-flow: row wrap;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+input {
+  display: block;
+  height: 25px;
+  border-color:rgba(0, 0, 0, 0.123);
+  border-radius: 5px;
+  width: 250px;
+}
+
+.align {
+  display: grid;
+  grid-template-rows: repeat(3); 
+  
+}
+
+.body {
+  padding: 30px;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+  height: 40vh;
+}
+
+p.lets {
+  margin: 0;
+  padding-bottom: 20px;
+
+}
+
+
+.child {
+  display: flex;
+  align-items: row;
+  gap: 50px;
+  margin-top: 10px;
+  
+  
+
+}
+
+label {
+  position: relative;
+  width: 15rem;
+  margin-bottom: 15px;
+  font-size: 0.8em;
+}
+
+
+.content {
+  
+
+}
+
+input:focus {
+  border: none;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+  outline: none;
+}
+
+input:invalid:focus {
+  border: 2px solid rgb(255, 69, 100)
+}
+
+input:focus:valid {
+  border: rgb(0, 183, 255) 2px solid;
+}
+
